@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The font-family Property — Documentation</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site">
+    <header class="header">
+      <a class="logo" href="index.html"><img src="logo.jpg" alt="HTML & CSS logo"></a>
+      <div>
+        <h1>HTML &amp; CSS Documentation</h1>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="bold.html">b</a>
+          <a href="italic.html">i</a>
+          <a href="underline.html">u</a>
+          <a href="mark.html">mark</a>
+          <a href="del.html">del</a>
+          <a href="strong.html">strong</a>
+          <a href="em.html">em</a>
+          <a href="small.html">small</a>
+          <a href="sub.html">sub</a>
+          <a href="sup.html">sup</a>
+          <a href="color_css.html">Color</a>
+          <a class="active" href="font_css.html">Font</a>
+          <a href="margin_css.html">Margin</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="card card--wide">
+        <h2>The <span class="code">font-family</span> Property</h2>
+        <p>The <span class="code">font-family</span> property specifies prioritized lists of font family names and/or generic family names. Browsers use the first available font in the list.</p>
+
+        <h3>Example Code:</h3>
+        <pre>
+&lt;!-- fallback list: Roboto → Segoe UI → Arial → sans-serif --&gt;
+&lt;p class="demo-slab"&gt;This paragraph uses a serif font from the font-family stack.&lt;/p&gt;
+        </pre>
+
+        <h3>The Result:</h3>
+        <div class="result">
+          <p class="demo-slab">This paragraph uses a serif font from the font-family stack.</p>
+        </div>
+
+        <div class="meta">
+          <a class="external" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-family" target="_blank" rel="noopener">W3C: font-family</a>
+        </div>
+      </article>
+
+      <aside class="card">
+        <h3>Notes</h3>
+        <p>Always include generic family as the last fallback: <code>serif</code>, <code>sans-serif</code>, etc.</p>
+      </aside>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    Jonathan Stewart | October 13, 2025 | CCRI Lincoln Campus
+  </footer>
+</body>
+</html>

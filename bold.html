@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The b Element — Documentation</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site">
+    <header class="header">
+      <a class="logo" href="index.html"><img src="logo.jpg" alt="HTML & CSS logo"></a>
+      <div>
+        <h1>HTML &amp; CSS Documentation</h1>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a class="active" href="bold.html">b</a>
+          <a href="italic.html">i</a>
+          <a href="underline.html">u</a>
+          <a href="mark.html">mark</a>
+          <a href="del.html">del</a>
+          <a href="strong.html">strong</a>
+          <a href="em.html">em</a>
+          <a href="small.html">small</a>
+          <a href="sub.html">sub</a>
+          <a href="sup.html">sup</a>
+          <a href="color_css.html">Color</a>
+          <a href="font_css.html">Font</a>
+          <a href="margin_css.html">Margin</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="card card--wide" aria-labelledby="b-heading">
+        <h2 id="b-heading">The <span class="code">b</span> Element</h2>
+        <p>The <span class="code">b</span> element represents a span of text to which attention is being drawn for utilitarian purposes without conveying any extra importance. It applies a stylistic offset—typically bold—without implying additional importance or emphasis.</p>
+
+        <h3>Example Code:</h3>
+        <pre>
+This is some &lt;b&gt;really bold text&lt;/b&gt;.
+        </pre>
+        <p class="code-caption">Note: The characters &lt; and &gt; are shown via character entity references.</p>
+
+        <h3>The Result:</h3>
+        <div class="result">
+          <p>This is some <b>really bold text</b>.</p>
+        </div>
+
+        <div class="meta">
+          <span>Spec:</span>
+          <a class="external" href="https://www.w3.org/TR/html52/textlevel-semantics.html#the-b-element" target="_blank" rel="noopener">W3C: &lt;b&gt; element</a>
+        </div>
+      </article>
+
+      <aside class="card" aria-labelledby="b-extras">
+        <h3 id="b-extras">Notes & tips</h3>
+        <p>Use <span class="code">&lt;strong&gt;</span> if the text has strong importance (semantic). Use <span class="code">&lt;b&gt;</span> when you need a visual offset only.</p>
+      </aside>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    Jonathan Stewart | October 8, 2025 | CCRI Lincoln Campus
+  </footer>
+</body>
+</html>

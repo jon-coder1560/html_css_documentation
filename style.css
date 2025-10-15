@@ -1,0 +1,221 @@
+/* 
+Author: Jonathan Stewart
+Date: 10/8/2025
+Project: COMI 1750 Documentation Project
+*/
+
+/* ============ VARIABLES ============ */
+:root{
+  --brand-blue: rgb(56,113,183); /* main brand color */
+  --accent: #ffcc00;
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --max-width: 1100px;
+}
+
+/* ============ GLOBAL ============ */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color:#222;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding-bottom: 60px; /* room for footer on small screens */
+}
+
+/* ============ LAYOUT CONTAINERS ============ */
+.site {
+  max-width: var(--max-width);
+  margin: 28px auto;
+  padding: 0 18px;
+}
+
+/* header */
+.header {
+  background: linear-gradient(180deg, var(--brand-blue), rgba(56,113,183,0.9));
+  color: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  display:flex;
+  align-items:center;
+  gap:18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* clickable logo */
+.header .logo {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:72px;
+  height:72px;
+  border-radius:12px;
+  background: rgba(255,255,255,0.06);
+  flex-shrink:0;
+}
+.header .logo img{max-width:64px; height:auto; display:block}
+
+/* site title */
+.header h1{
+  margin:0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size:1.4rem;
+  letter-spacing: -0.5px;
+}
+
+/* ============ NAV ============ */
+nav.main-nav{
+  margin-top:12px;
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+nav.main-nav a{
+  text-decoration:none;
+  display:inline-block;
+  padding:8px 12px;
+  border-radius:8px;
+  color: #fff;
+  background: rgba(0,0,0,0.15);
+  font-size:0.92rem;
+  transition: all .18s ease;
+}
+nav.main-nav a:hover,
+nav.main-nav a:focus{
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(17,24,39,0.08);
+  background: var(--accent);
+  color: #111;
+}
+nav.main-nav a.active{
+  background: #fff;
+  color: var(--brand-blue);
+  font-weight:600;
+}
+
+/* ============ MAIN CONTENT ============ */
+main{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:20px;
+  margin-top:20px;
+}
+
+/* page card */
+.card{
+  background: var(--card);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(13,18,25,0.06);
+  border: 1px solid rgba(15,23,42,0.03);
+}
+
+/* header inside card */
+.card h2{margin-top:0; font-family: Georgia, serif; color:var(--brand-blue)}
+
+/* monospaced element-name */
+span.code {
+  font-family: Consolas, "Courier New", monospace;
+  background: #f3f4f6;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size:0.95em;
+  color:#0f172a;
+}
+
+/* preformatted code */
+pre{
+  background:#0b1220;
+  color:#e6eef6;
+  padding:14px;
+  border-radius:8px;
+  overflow:auto;
+  font-family: Consolas, "Courier New", monospace;
+  font-size:0.95rem;
+  line-height:1.45;
+  margin:10px 0;
+  box-shadow: inset 0 -2px 0 rgba(255,255,255,0.02);
+}
+
+/* code caption */
+.code-caption{font-size:0.9rem; color:var(--muted); margin:6px 0 0}
+
+/* result area */
+.result{
+  margin-top:10px;
+  padding:12px;
+  border-radius:8px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.85));
+  border: 1px solid rgba(15,23,42,0.04);
+}
+
+/* small meta/link row */
+.meta{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  font-size:0.92rem;
+  color:var(--muted);
+  margin-top:12px;
+}
+
+/* link style */
+a.external{
+  color: var(--brand-blue);
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(88,100,180,0.25);
+}
+a.external:hover{color: #163b6b}
+
+/* ============ CSS DEMO CLASSES (used by docs) ============ */
+/* color example: rgb used */
+.demo-red { color: rgb(220, 38, 38); font-weight:600; }
+
+/* font example */
+.demo-slab{ font-family: "Georgia", serif; font-size:1.05rem; }
+
+/* margin example: demonstrates units px, em, % */
+.demo-margin{
+  margin: 16px;        /* px */
+  padding: 1.2em;      /* em */
+  width: 80%;          /* percent */
+  border: 1px dashed rgba(0,0,0,0.08);
+}
+
+/* other helper classes */
+.badge{
+  display:inline-block;
+  background: var(--brand-blue);
+  color:#fff;
+  padding:6px 8px;
+  border-radius:6px;
+  font-size:0.8rem;
+}
+
+/* ============ FOOTER ============ */
+.site-footer{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  background: linear-gradient(180deg, rgba(56,113,183,0.98), rgba(56,113,183,0.95));
+  color:#fff;
+  padding:10px 0;
+  text-align:center;
+  font-size:0.9rem;
+  box-shadow: 0 -6px 20px rgba(0,0,0,0.06);
+}
+
+/* ============ RESPONSIVE ============ */
+@media (min-width:920px){
+  main{ grid-template-columns: 1fr 360px; align-items:start }
+  .card--wide{ grid-column: 1 / -1 }
+}
+
+/* ensure accessible focus */
+a:focus{ outline: 3px dashed rgba(255,204,0,0.45); outline-offset:4px }

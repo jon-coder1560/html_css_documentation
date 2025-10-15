@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HTML & CSS Documentation — Home</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site">
+    <!-- HEADER -->
+    <header class="header">
+      <a class="logo" href="index.html" title="Home">
+        <img src="logo.jpg" alt="HTML & CSS logo">
+      </a>
+      <div>
+        <h1>HTML &amp; CSS Documentation — Quick Reference</h1>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="active" href="index.html">Home</a>
+          <a href="bold.html">b</a>
+          <a href="italic.html">i</a>
+          <a href="underline.html">u</a>
+          <a href="mark.html">mark</a>
+          <a href="del.html">del</a>
+          <a href="strong.html">strong</a>
+          <a href="em.html">em</a>
+          <a href="small.html">small</a>
+          <a href="sub.html">sub</a>
+          <a href="sup.html">sup</a>
+          <a href="color_css.html">Color</a>
+          <a href="font_css.html">Font</a>
+          <a href="margin_css.html">Margin</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <section class="card card--wide" aria-labelledby="home-intro">
+        <h2 id="home-intro">About this documentation site</h2>
+        <p>This site demonstrates common <strong>visual</strong> HTML elements and a few CSS properties. Each documentation page provides:</p>
+        <ul>
+          <li>a short description of the element/property</li>
+          <li>an example code block (visible using <code>&lt;pre&gt;</code>)</li>
+          <li>a rendered <em>Result</em> area so you can see what the code does</li>
+          <li>a link to the official specification (W3C / WHATWG)</li>
+        </ul>
+        <p>Use the navigation above to jump to any page. The pages are structured consistently so you can reuse each page as a template for further documentation.</p>
+
+        <p class="code-caption">Mail the webmaster:</p>
+        <p><a class="external" href="mailto:jstewart7@my.ccri.edu">jstewart7@my.ccri.edu</a></p>
+
+        <p class="code-caption">How to use this site:</p>
+        <ol>
+          <li>Open a page for an element or property.</li>
+          <li>Read the short description and study the sample code inside the <code>&lt;pre&gt;</code>.</li>
+          <li>Look at the Result area to see the rendered effect.</li>
+        </ol>
+      </section>
+
+      <aside class="card" aria-labelledby="quick-links">
+        <h2 id="quick-links">Quick examples</h2>
+        <p>Try these pages for quick reference:</p>
+        <p><a class="badge" href="bold.html">&lt;b&gt;</a> <a class="badge" href="strong.html">&lt;strong&gt;</a> <a class="badge" href="color_css.html">color</a></p>
+
+        <h3 style="margin-top:12px">CSS notes</h3>
+        <p>Styles in <code>style.css</code> use multiple units (px, em, %), at least two distinct fonts (system sans + Georgia), and color from <code>rgb()</code>.</p>
+      </aside>
+    </main>
+
+  </div>
+
+  <footer class="site-footer">
+    Jonathan Stewart | October 8, 2025 | CCRI Lincoln Campus
+  </footer>
+</body>
+</html>
